@@ -57,42 +57,42 @@
 			<figure>
 				<img src="images/corpown.png" alt="corporate ownership trend over time by neighborhood" style = "width: 100%; height: 70%" />
 				<figcaption>
-				This plot shows the trends in corporate ownership from 2004 to 2024 in the metro Boston area with a different trend line for each neighborhood. There is also an overall trend line for the metro Boston area, with the 2004 and 2024 data points labeled. The overall trend line shows a steady increase in corporate ownership over time. The neighborhood trend lines show a lot of variation, but the overall trend is still visible. The neighborhoods with the most corporate ownership in 2024 are Fenway, Downtown, and South Boston. The neighborhoods with the least corporate ownership in 2024 are Hyde Park, Mattapan, and Roslindale. I was surprised to see the ownership rates to be slowly increasing in the first decade, but after about 2014, the trend seemed to increase more drasatically. I am curious to see if there will be any sort of saturation or decline in corporate ownership over time, along with what this trend looks like more broadly in the US.
+				This plot shows the trends in corporate ownership from 2004 to 2024 in the metro Boston area with a different trend line for each neighborhood. There is also an overall trend line for the metro Boston area, with the 2004 and 2024 data points labeled. The overall trend line shows a steady increase in corporate ownership over time. The neighborhood trend lines show a lot of variation, but the overall trend is still visible. The neighborhoods with the most corporate ownership in 2024 are Fenway, Downtown, and South Boston. These neighborhoods are also those with relatively high portion of the population being white. Fenway being less so, but also being dominated by college housing based on the prior graph. The neighborhoods with the least corporate ownership in 2024 are Hyde Park, Mattapan, and Roslindale. These neighborhoods have much higher Black, Hispanic, or Asian populations. I was surprised to see the ownership rates to be slowly increasing in the first decade, but after about 2014, the trend seemed to increase more drastically. I am curious to see if there will be any sort of saturation or decline in corporate ownership over time, along with what this trend looks like more broadly in the US. The ~5x increase in corporate ownership on average is also noteworthy.
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/ownerocc.png" alt="owner occupancy trends over time bey neighborhood" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot similar to the prior one shows trends in owner occupancy from 2004 to 2024 in the metro Boston area with a different trend line for each neighborhood. There is also an overall trend line for the metro Boston area, with the 2004 and 2024 data points labeled. The overall trend line shows a steady decrease in owner occupancy over time but not as drastic as the increase in corporate ownership. There has been a 5% drop over the last 20 years which may or may not be statically significant especially when looking at the variation from neighborhood to neighborhood. Unsurprisingly, the areas with higher corporate ownership rate also tend to have lower owner occupancy rates. This may be a bit of leap, but there definitely seems to be a potential correlation. Neighborhoods with residents that are more affluent or have a greater need (e.g., college students) are more likely to be owned by corporations. I would be curious to see if there is a correlation between the owner occupancy rate and the average income of the neighborhood.
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/occ_vacc.png" alt="occupancy vs vacant population by neighborhood" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot shows the split of occupied vs vacant units by neighborhood. The most shocking thing about this plot was the very low vacancy rates across all the neighborhoods. It seems as though there are very few units not being utilized by a tencent which seems to indicate there is a supply shortage for housing in the metro Boston area. The two areas with relatively higher vacancy rates around 20% are South Boston Waterfront and Downtown, two areas known for having higher rents which may be related. On the other hand Brighton, Roslindale, and Hyde Park have the lowest vacancy rates at about 4%. The majority of the neighborhoods however hover at 6-10% vacancy rates. Being able to layer in new build data would be an interesting way to understand what is driving the vacancy rates. 
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/vacantstack.png" alt="100% stack bar of vacant units by neighborhood" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot takes just the vacant portion of the prior stacked bar chart and makes it a 100% stacked bar chart. This makes it easier to see the relative proportion of vacant units in each neighborhood. This demonstrates the spread of vacant units across all neighborhoods more clearly with 6 neighborhoods having nearly 50% of all vacancies and another dozen comprising the next ~50%
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/occupiedcountbubble.png" alt="bubble chart of occupied units" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This bubble chart shows similar information to the prior chart but focuses on occupied units not vacant ones. The spread across neighborhoods is even more visible when comparing the size of the different circles. Initially I attempted to create a bubble chart with each bubble being a separate pie chart with a different measure being used to add another dimension to the data, but this proved very difficult and I was unable to get it to work. I would like to revisit this in the future.
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/noncollegegroup.png" alt="bar chart of people living in group quarters not including college aged" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This final plot compares the number of people living in group quarters not including college aged people in university housing. This effectively allowed for me to control for a portion of the population that would be expected to be in group quarters. Roxbury and Dorchester rising to the top here despite Roxbury having Northeastern University nearby is very telling as to the structure of housing in that neighborhood. Again layering in more socioeconomic data would be very interesting to see how this data intersects with wealth or income.
 				</figcaption>
 			</figure>
 		</section>
@@ -100,7 +100,7 @@
 		<section>
 			<h2>Summary</h2>
 
-			<p>WRITE FINAL SUMMARY HERE.</p>
+			<p>Ultimately, I was unable to answer most of the questions that initially got me interested in the data set around evictions, but there was still some extremely interesting insights to be drawn from the data. The role of neighborhoods, race, and education were the primary ones I focused on. There were multiple questions and next steps that came to mind as I was conducting the exploratory portion of the analysis and thoughts about predicting corporate ownership rates are still flying through my head now. I would also love to start to look for third party data on evictions in order to go back and answer some of my initial questions. There is a lot of concern that can stem from the rapid increase in corporate ownership rates over the last 20 years. I focused on neighborhood breakdown, but other demographics could also be used though the limitation of the census data being from 2020 made me hesitate to plot corporate ownership rates for say nursing homes over time when the total population in nursing homes is a flat value from 2020. There are plenty of further questions to be asked and answer on this data set and other related data sets. </p>
 		</section>
 	</main>
 </body>
