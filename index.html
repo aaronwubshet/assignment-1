@@ -24,40 +24,40 @@
 			<ol>
 				<li>Is the disparity in eviction filings between live-in/live-nearby landlords compared to absentee/corporate landlords statistically significant? Is it concentrated/driven by certain neighborhoods, socioeconomic demographics, or other factors? How has COVID impacted this disparity?</li>
 					<ul>
-						<li>Motivation: this disparity is clearly a problem, but it is likely so widespread it would be difficult to priotize initiatives to tackle the issue without some measure of severity</li>
+						<li>Motivation: this disparity is clearly a problem, but it is likely so widespread it would be difficult to prioritize initiatives to tackle the issue without some measure of severity</li>
 					</ul>
-				<li>Where has corporate ownership overtime experienced the biggest change? Does normalizing either for land area or some measure of wealth change the which neighborhoods are the biggest hotspots? What does this imply about future trends in corporate ownership if nothing is done? Are there any guardrails that could stop or reverse any trends today?</li>
+				<li>Where has corporate ownership overtime experienced the biggest change? Does normalizing either for land area or some measure of wealth change the which neighborhoods are the biggest hot spots? What does this imply about future trends in corporate ownership if nothing is done? Are there any guardrails that could stop or reverse any trends today?</li>
 					<ul>
 						<li>Motivation: Just want to understand if there is saturation in corporate ownership or if we are still in the middle of a long wave. This can provide some context on the scale of the issue was well as where we need to focus without simply looking at totals which is why the normalization piece feels important to me.</li>
 					</ul>
 				<li> Which demographics were impacted COVID evictions more than others? Did corporate ownership accelerate or slow during COVID?</li>
 					<ul>
-						<li>Motivation: COVID obviously had an enourmous impact on housing and the financial sector and I am curious to know if corporate owners got more aggressive either in evicitions or in buying up properties as a result. </li>
+						<li>Motivation: COVID obviously had an enormous impact on housing and the financial sector and I am curious to know if corporate owners got more aggressive either in evictions or in buying up properties as a result. </li>
 					</ul>
 			</ol>
 		</section>
 
 		<section>
 			<h2>Discoveries & Insights</h2>
-			After actually digging into the data, I realized a few major things. Firstly, there is no eviction data. There is 2020 census data, corporate ownership data over time (2004-2024), and owner occupancy data over time (2004-2024). The demographic data being only a snapshot from 2020 meant I had to be careful about when I used sum vs average vs filtering for a specific year. I learned this the hard way when the population of the metro Boston area was showing up over 13M initially. The description of the dataset and subtheme made me think there was eviction data with fields for live in/live nearby landlords vs corporate landlords, but unfortunately that is not the case. I was able to pivot my analysis and visualization to focus understanding where different demographics of people live and what the corresponding trends in corporate ownership and owner occupancy is in those areas.
+			After actually digging into the data, I realized a few major things. Firstly, there is no eviction data. There is 2020 census data, corporate ownership data over time (2004-2024), and owner occupancy data over time (2004-2024). The demographic data being only a snapshot from 2020 meant I had to be careful about when I used sum vs average vs filtering for a specific year. I learned this the hard way when the population of the metro Boston area was showing up over 13M initially. The description of the dataset and sub-theme made me think there was eviction data with fields for live in/live nearby landlords vs corporate landlords, but unfortunately that is not the case. I was able to pivot my analysis and visualization to focus understanding where different demographics of people live and what the corresponding trends in corporate ownership and owner occupancy is in those areas. Given the large number of neighborhoods also I found sizing and readability to an issue throughout the visualization process and something I'd like to improve on in the future.
 			<figure>
 				<img src="images/races.png" alt="stacked bar chart of racial breakdown by race" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot shows the total population living in each metro Boston neighborhood in 2020 split by race / ethnicity. Initially I was hesitant to create a plot that focused on race, but I realized that it was important to understand the racial breakdown of the area to understand the context of the data. I was surprised to see Dorchester as the most populated area. I've lived in the metro Boston area for nearly 6 years and only recently started to spend time in Dorchester. The racial division of most neighborhoods leaves a dominate race is most neighborhoods (e.g., South Boston is primarily white, Hyde Park and Mattapan are primarily black, Chinatown is primarily Asian and Pacific Islander, etc.). However, Roxbury, Dorchester, and East Boston are the most diverse neighborhoods. I'd love to be able to layer on wealth or income data to understand the intersectionality from here. 
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/college.png" alt="bar chart of number of people living in student housing" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot shows the metro Boston population living in college/university housing by neighborhood. This was both surprising and unsurprising in different ways. The concentration of student housing in Fenway due to Boston University, Roxbury with Northeastern, Downtown with Tufts and Emerson all seemed reasonable. I could generally point to what university was driving the population of each neighborhood. The surprising part was the overall number of students. Boston is often anecdotally referred to as a college town, but ~30,000 residing in student housing relative to the 1.3M total population is not as high as I would have expected.
 				</figcaption>
 			</figure>
 
 			<figure>
 				<img src="images/corpown.png" alt="corporate ownership trend over time by neighborhood" style = "width: 100%; height: 70%" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This plot shows the trends in corporate ownership from 2004 to 2024 in the metro Boston area with a different trend line for each neighborhood. There is also an overall trend line for the metro Boston area, with the 2004 and 2024 data points labeled. The overall trend line shows a steady increase in corporate ownership over time. The neighborhood trend lines show a lot of variation, but the overall trend is still visible. The neighborhoods with the most corporate ownership in 2024 are Fenway, Downtown, and South Boston. The neighborhoods with the least corporate ownership in 2024 are Hyde Park, Mattapan, and Roslindale. I was surprised to see the ownership rates to be slowly increasing in the first decade, but after about 2014, the trend seemed to increase more drasatically. I am curious to see if there will be any sort of saturation or decline in corporate ownership over time, along with what this trend looks like more broadly in the US.
 				</figcaption>
 			</figure>
 
